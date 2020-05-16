@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dimen_24dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:src="@drawable/ic_welcome_parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="@dimen/dimen_24dp"
+        android:text="Ayah Bunda silahkan mengisi data anak di bawah ini"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen_20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dimen_8dp"
+        android:text="Nama Panggilan Anak"
+        android:textColor="@android:color/black"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/main_etNamaAnak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="Isi dengan nama anak anda" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Jenis Kelamin"
+        android:textColor="@android:color/black"
+        android:textSize="14dp" />
+
+    <RadioGroup
+        android:id="@+id/radiogander"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radiolaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="laki-laki" />
+
+        <RadioButton
+            android:id="@+id/radioperempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Perempuan" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dimen_8dp"
+        android:text="Umur Saat ini"
+        android:textColor="@android:color/black"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/main_etUmur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="cth : 12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dimen_8dp"
+        android:text="*Umur diperlukan untuk rekomendasi waktu handphone anak anda"
+        android:textSize="14dp" />
+
+    <Button
+        android:onClick="daftarBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:background="@drawable/bgbutton"
+        android:text="daftar"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>

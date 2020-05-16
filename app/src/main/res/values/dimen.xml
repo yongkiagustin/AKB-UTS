@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="dimen_24dp" type="dimen">24dp</item>
+    <item name="dimen_8dp" type="dimen">8dp</item>
+    <item name="dimen_12dp" type="dimen">12dp</item>
+    <item name="dimen_20dp" type="dimen">20dp</item>
+</resources>
